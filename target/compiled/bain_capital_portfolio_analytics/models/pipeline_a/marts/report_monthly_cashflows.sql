@@ -4,7 +4,7 @@
 --
 
 with fact_data as (
-    select * from DBT_DEMO.DEV_pipeline_a.fact_cashflow_summary
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.fact_cashflow_summary
 ),
 
 monthly_totals as (

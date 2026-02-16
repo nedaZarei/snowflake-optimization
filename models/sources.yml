@@ -3,11 +3,12 @@ version: 2
 sources:
   - name: raw
     description: Raw data from source systems
-    database: DBT_DEMO
+    database: BAIN_ANALYTICS
     schema: DEV
     tables:
       # Pipeline A Sources
       - name: cashflows
+        identifier: SAMPLE_CASHFLOWS
         description: Raw cashflow transactions (contributions, distributions, dividends, fees)
         columns:
           - name: cashflow_id
@@ -29,6 +30,7 @@ sources:
             description: Currency of the cashflow
 
       - name: portfolios
+        identifier: SAMPLE_PORTFOLIOS
         description: Portfolio master data
         columns:
           - name: portfolio_id
@@ -47,6 +49,7 @@ sources:
 
       # Pipeline B Sources
       - name: trades
+        identifier: SAMPLE_TRADES
         description: Trade transaction records
         columns:
           - name: trade_id
@@ -70,6 +73,7 @@ sources:
             description: Net settlement amount
 
       - name: securities
+        identifier: SAMPLE_SECURITIES
         description: Security master data
         columns:
           - name: security_id
@@ -91,6 +95,7 @@ sources:
             description: GICS industry
 
       - name: market_prices
+        identifier: SAMPLE_MARKET_PRICES
         description: Daily market price data
         columns:
           - name: security_id
@@ -103,6 +108,7 @@ sources:
             description: Trading volume
 
       - name: brokers
+        identifier: SAMPLE_BROKERS
         description: Broker/counterparty information
         columns:
           - name: broker_id
@@ -115,6 +121,7 @@ sources:
 
       # Pipeline C Sources
       - name: positions_daily
+        identifier: SAMPLE_POSITIONS_DAILY
         description: Daily position snapshots
         columns:
           - name: position_id
@@ -134,6 +141,7 @@ sources:
             description: Market value in USD
 
       - name: benchmarks
+        identifier: SAMPLE_BENCHMARKS
         description: Benchmark index definitions
         columns:
           - name: benchmark_id
@@ -147,6 +155,7 @@ sources:
             description: Benchmark ticker (SPY, AGG, etc.)
 
       - name: benchmark_returns
+        identifier: SAMPLE_BENCHMARK_RETURNS
         description: Daily benchmark return data
         columns:
           - name: benchmark_id
@@ -157,6 +166,7 @@ sources:
             description: Daily percentage return
 
       - name: portfolio_benchmarks
+        identifier: SAMPLE_PORTFOLIO_BENCHMARKS
         description: Portfolio to benchmark mapping
         columns:
           - name: portfolio_id
@@ -167,6 +177,7 @@ sources:
             description: Whether this is the primary benchmark
 
       - name: fund_hierarchy
+        identifier: SAMPLE_FUND_HIERARCHY
         description: Fund/portfolio organizational hierarchy
         columns:
           - name: entity_id
@@ -182,6 +193,7 @@ sources:
             description: Depth in hierarchy (1=top)
 
       - name: valuations
+        identifier: SAMPLE_VALUATIONS
         description: Portfolio NAV and valuation data
         columns:
           - name: valuation_id

@@ -1,5 +1,5 @@
 
-  create or replace   view DBT_DEMO.DEV_pipeline_a.stg_portfolios
+  create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
   
   
   
@@ -9,9 +9,6 @@
 -- Model: stg_portfolios
 -- Description: Staging model for portfolio master data
 --
--- ISSUES FOR ARTEMIS TO OPTIMIZE:
--- 1. Subquery for deduplication instead of QUALIFY
--- 2. Multiple passes over data
 
 with source as (
     select
@@ -21,17 +18,14 @@ with source as (
         fund_id,
         inception_date,
         status,
-        currency,
-        created_at,
-        updated_at,
+        aum_usd,
         row_number() over (
             partition by portfolio_id
-            order by updated_at desc
+            order by portfolio_id desc
         ) as rn
-    from DBT_DEMO.DEV.portfolios
+    from BAIN_ANALYTICS.DEV.SAMPLE_PORTFOLIOS
 ),
 
--- ISSUE: Using subquery filter instead of QUALIFY
 deduplicated as (
     select
         portfolio_id,
@@ -40,14 +34,11 @@ deduplicated as (
         fund_id,
         inception_date,
         status,
-        currency,
-        created_at,
-        updated_at
+        aum_usd
     from source
-    where rn = 1  -- ISSUE: Should use QUALIFY in Snowflake
+    where rn = 1
 ),
 
--- ISSUE: Another pass just for active filter
 active_only as (
     select *
     from deduplicated

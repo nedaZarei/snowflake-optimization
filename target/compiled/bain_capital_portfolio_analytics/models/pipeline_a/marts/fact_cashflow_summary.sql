@@ -4,11 +4,11 @@
 --
 
 with cashflows as (
-    select * from DBT_DEMO.DEV_pipeline_a.stg_cashflows
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
 ),
 
 portfolios as (
-    select * from DBT_DEMO.DEV_pipeline_a.stg_portfolios
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
 ),
 
 joined as (

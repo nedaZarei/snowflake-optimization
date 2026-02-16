@@ -13,13 +13,13 @@ with source as (
         currency,
         created_at,
         updated_at
-    from DBT_DEMO.DEV.cashflows
+    from BAIN_ANALYTICS.DEV.SAMPLE_CASHFLOWS
 ),
 
 converted as (
     select
         cashflow_id,
-        portfolio_id,
+        'PF' || lpad(cast(portfolio_id as varchar), 3, '0') as portfolio_id,
         upper(cashflow_type) as cashflow_type,
         cast(cashflow_date as date) as cashflow_date,
         cast(amount as decimal(18,2)) as amount,

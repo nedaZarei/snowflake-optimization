@@ -17906,3 +17906,1662 @@ parsing.
 [0m23:50:16.429364 [debug] [ThreadPool]: Opening a new connection, currently in state init
 [0m23:50:16.429630 [debug] [ThreadPool]: Opening a new connection, currently in state init
 [0m23:50:16.430021 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:22:08.810490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1e4d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d442bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4aa250>]}
+
+
+============================== 19:22:08.816002 | a36c4c64-de03-443e-80a4-7ef148ccc351 ==============================
+[0m19:22:08.816002 [info ] [MainThread]: Running with dbt=1.11.5
+[0m19:22:08.816476 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'quiet': 'False', 'printer_width': '80', 'debug': 'False', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'warn_error': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt clean', 'introspect': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'log_format': 'default', 'write_json': 'True', 'partial_parse': 'True', 'no_print': 'None', 'empty': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'target_path': 'None'}
+[0m19:22:08.908074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a36c4c64-de03-443e-80a4-7ef148ccc351', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5b8210>]}
+[0m19:22:08.961820 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.20575033, "process_in_blocks": "0", "process_kernel_time": 0.25776, "process_mem_max_rss": "115310592", "process_out_blocks": "0", "process_user_time": 1.106238}
+[0m19:22:08.962215 [debug] [MainThread]: Command `dbt clean` succeeded at 19:22:08.962140 after 0.21 seconds
+[0m19:22:08.962495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d49e990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043a6910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d61e950>]}
+[0m19:22:08.962798 [debug] [MainThread]: Flushing usage events
+[0m19:22:10.266216 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:22:11.551580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099569d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099c5050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d0e10>]}
+
+
+============================== 19:22:11.555103 | 79bdfc43-8fef-4fb7-9b91-b681882ba459 ==============================
+[0m19:22:11.555103 [info ] [MainThread]: Running with dbt=1.11.5
+[0m19:22:11.555605 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'no_print': 'None', 'partial_parse': 'True', 'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'debug': 'False', 'invocation_command': 'dbt deps', 'indirect_selection': 'eager', 'static_parser': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'warn_error': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'cache_selected_only': 'False'}
+[0m19:22:11.642431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79bdfc43-8fef-4fb7-9b91-b681882ba459', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9c550>]}
+[0m19:22:11.658583 [debug] [MainThread]: Set downloads directory='/var/folders/9d/rc17811j07v56khq2t9t7h5m0000gn/T/dbt-downloads-incs2hkg'
+[0m19:22:11.658925 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:22:12.210742 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:22:12.213134 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:22:12.584083 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:22:12.591500 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:22:13.576960 [info ] [MainThread]: Installed from version 1.3.3
+[0m19:22:13.577289 [info ] [MainThread]: Up to date!
+[0m19:22:13.577573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '79bdfc43-8fef-4fb7-9b91-b681882ba459', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099baf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10995ee90>]}
+[0m19:22:13.579975 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.0803046, "process_in_blocks": "0", "process_kernel_time": 0.242083, "process_mem_max_rss": "121470976", "process_out_blocks": "0", "process_user_time": 1.124946}
+[0m19:22:13.580325 [debug] [MainThread]: Command `dbt deps` succeeded at 19:22:13.580256 after 2.08 seconds
+[0m19:22:13.580579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099c7290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1008da910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1008c21d0>]}
+[0m19:22:13.580832 [debug] [MainThread]: Flushing usage events
+[0m19:22:14.446142 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:22:15.780277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097741d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097cfc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097f5450>]}
+
+
+============================== 19:22:15.783358 | 93b51910-9b68-4463-920a-ae02e5244eb2 ==============================
+[0m19:22:15.783358 [info ] [MainThread]: Running with dbt=1.11.5
+[0m19:22:15.783788 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'version_check': 'True', 'static_parser': 'True', 'introspect': 'True', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'empty': 'False', 'target_path': 'None', 'debug': 'False', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'quiet': 'False', 'partial_parse': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --log-level debug', 'write_json': 'True', 'no_print': 'None', 'use_colors': 'True'}
+[0m19:22:17.787657 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:22:17.788573 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:22:17.788918 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:22:17.917853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097b7010>]}
+[0m19:22:17.959143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097b5410>]}
+[0m19:22:17.960849 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m19:22:18.062831 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m19:22:18.063529 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:22:18.063794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a99f3d0>]}
+[0m19:22:19.392175 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_trades' in
+package 'bain_capital_portfolio_analytics' (models/pipeline_b/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m19:22:19.393021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109163390>]}
+[0m19:22:19.635501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb57750>]}
+[0m19:22:19.792441 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m19:22:19.794566 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m19:22:19.813340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bce8fd0>]}
+[0m19:22:19.813812 [info ] [MainThread]: Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m19:22:19.814060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '93b51910-9b68-4463-920a-ae02e5244eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bc5110>]}
+[0m19:22:19.817233 [info ] [MainThread]: 
+[0m19:22:19.817478 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:22:19.817658 [info ] [MainThread]: 
+[0m19:22:19.817978 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:22:19.821091 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO'
+[0m19:22:19.868449 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO"
+[0m19:22:19.868856 [debug] [ThreadPool]: On list_DBT_DEMO: show terse schemas in database DBT_DEMO
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO"} */
+[0m19:22:19.869086 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:22:22.361386 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 2.492 seconds
+[0m19:22:22.367923 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_DEMO, now list_DBT_DEMO_DEV_pipeline_b)
+[0m19:22:22.368608 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO_DEV_pipeline_a'
+[0m19:22:22.369212 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO_DEV_pipeline_c'
+[0m19:22:22.370020 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO_DEV'
+[0m19:22:22.383840 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV_pipeline_b"
+[0m19:22:22.386281 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV_pipeline_a"
+[0m19:22:22.387960 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV_pipeline_c"
+[0m19:22:22.389624 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV"
+[0m19:22:22.389868 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_b: show objects in DBT_DEMO.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_b"} */;
+[0m19:22:22.390102 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_a: show objects in DBT_DEMO.DEV_pipeline_a
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_a"} */;
+[0m19:22:22.390318 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_c: show objects in DBT_DEMO.DEV_pipeline_c
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_c"} */;
+[0m19:22:22.390534 [debug] [ThreadPool]: On list_DBT_DEMO_DEV: show objects in DBT_DEMO.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV"} */;
+[0m19:22:22.391329 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:22:22.392023 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:22:22.392433 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:22:22.807772 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.417 seconds
+[0m19:22:23.897607 [debug] [ThreadPool]: SQL status: SUCCESS 19 in 1.505 seconds
+[0m19:22:24.908428 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.517 seconds
+[0m19:24:22.617833 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show objects in DBT_DEMO.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV"} */;
+[0m19:24:22.618347 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:24:22.618779 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:24:22.619063 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:24:22.619893 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:24:22.620249 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV_pipeline_b' was left open.
+[0m19:24:22.620549 [debug] [MainThread]: On list_DBT_DEMO_DEV_pipeline_b: Close
+[0m19:24:23.012372 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV_pipeline_a' was left open.
+[0m19:24:23.013220 [debug] [MainThread]: On list_DBT_DEMO_DEV_pipeline_a: Close
+[0m19:24:23.343817 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV_pipeline_c' was left open.
+[0m19:24:23.344632 [debug] [MainThread]: On list_DBT_DEMO_DEV_pipeline_c: Close
+[0m19:24:23.646456 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV' was left open.
+[0m19:24:23.647183 [debug] [MainThread]: On list_DBT_DEMO_DEV: No close available on handle
+[0m19:24:23.647579 [info ] [MainThread]: 
+[0m19:24:23.647882 [info ] [MainThread]: Finished running  in 0 hours 2 minutes and 3.83 seconds (123.83s).
+[0m19:24:23.648498 [error] [MainThread]: Encountered an error:
+Database Error
+  250001: Could not connect to Snowflake backend after 1 attempt(s).Aborting
+[0m19:24:23.649374 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 10 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:24:23.653533 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 127.92581, "process_in_blocks": "0", "process_kernel_time": 0.489824, "process_mem_max_rss": "181616640", "process_out_blocks": "0", "process_user_time": 3.575388}
+[0m19:24:23.653995 [debug] [MainThread]: Command `dbt run` failed at 19:24:23.653913 after 127.93 seconds
+[0m19:24:23.654371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097f4090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd651d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c256890>]}
+[0m19:24:23.654719 [debug] [MainThread]: Flushing usage events
+[0m19:24:24.704553 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:30:17.425701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a19210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a20590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a8b790>]}
+
+
+============================== 19:30:17.429695 | aeb09b6a-4167-49a1-a389-7ed7dc5dfeaf ==============================
+[0m19:30:17.429695 [info ] [MainThread]: Running with dbt=1.11.5
+[0m19:30:17.430192 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'debug': 'False', 'invocation_command': 'dbt debug', 'introspect': 'True', 'fail_fast': 'False', 'write_json': 'True', 'empty': 'None', 'target_path': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'printer_width': '80', 'version_check': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'use_colors': 'True'}
+[0m19:30:17.444308 [info ] [MainThread]: dbt version: 1.11.5
+[0m19:30:17.444604 [info ] [MainThread]: python version: 3.11.14
+[0m19:30:17.444831 [info ] [MainThread]: python path: /Users/nedazarei/Documents/turintech/snowflake-optimized/.venv/bin/python3.11
+[0m19:30:17.445032 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m19:30:17.748951 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:30:17.749344 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:30:17.749581 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:30:17.791575 [info ] [MainThread]: Using profiles dir at /Users/nedazarei/Documents/turintech/snowflake-optimized
+[0m19:30:17.791957 [info ] [MainThread]: Using profiles.yml file at /Users/nedazarei/Documents/turintech/snowflake-optimized/profiles.yml
+[0m19:30:17.792196 [info ] [MainThread]: Using dbt_project.yml file at /Users/nedazarei/Documents/turintech/snowflake-optimized/dbt_project.yml
+[0m19:30:17.792725 [info ] [MainThread]: adapter type: snowflake
+[0m19:30:17.792979 [info ] [MainThread]: adapter version: 1.11.2
+[0m19:30:17.862767 [info ] [MainThread]: Configuration:
+[0m19:30:17.863094 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:30:17.863297 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:30:17.863488 [info ] [MainThread]: Required dependencies:
+[0m19:30:17.863729 [debug] [MainThread]: Executing "git --help"
+[0m19:30:17.896412 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:30:17.897117 [debug] [MainThread]: STDERR: "b''"
+[0m19:30:17.897403 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:30:17.897643 [info ] [MainThread]: Connection:
+[0m19:30:17.897897 [info ] [MainThread]:   account: PZXTMSC-WP48482
+[0m19:30:17.898085 [info ] [MainThread]:   user: NDAWZZ
+[0m19:30:17.898263 [info ] [MainThread]:   database: DBT_DEMO
+[0m19:30:17.898437 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m19:30:17.898613 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m19:30:17.898783 [info ] [MainThread]:   schema: DEV
+[0m19:30:17.898955 [info ] [MainThread]:   authenticator: None
+[0m19:30:17.899137 [info ] [MainThread]:   oauth_client_id: None
+[0m19:30:17.899312 [info ] [MainThread]:   query_tag: None
+[0m19:30:17.899484 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:30:17.899657 [info ] [MainThread]:   host: None
+[0m19:30:17.899827 [info ] [MainThread]:   port: None
+[0m19:30:17.899993 [info ] [MainThread]:   proxy_host: None
+[0m19:30:17.900163 [info ] [MainThread]:   proxy_port: None
+[0m19:30:17.900331 [info ] [MainThread]:   protocol: None
+[0m19:30:17.900504 [info ] [MainThread]:   connect_retries: 1
+[0m19:30:17.900670 [info ] [MainThread]:   connect_timeout: None
+[0m19:30:17.900841 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:30:17.901013 [info ] [MainThread]:   retry_all: False
+[0m19:30:17.901180 [info ] [MainThread]:   insecure_mode: False
+[0m19:30:17.901348 [info ] [MainThread]:   reuse_connections: True
+[0m19:30:17.901513 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m19:30:17.901689 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m19:30:17.902158 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m19:30:17.992384 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:30:18.029577 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:30:18.029946 [debug] [MainThread]: On debug: select 1 as id
+[0m19:30:18.030167 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:31:19.950303 [debug] [MainThread]: SQL status: SUCCESS 1 in 61.920 seconds
+[0m19:31:19.953010 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:31:19.953848 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:31:19.958162 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 62.585766, "process_in_blocks": "0", "process_kernel_time": 0.346119, "process_mem_max_rss": "158416896", "process_out_blocks": "0", "process_user_time": 1.432377}
+[0m19:31:19.958652 [debug] [MainThread]: Command `dbt debug` succeeded at 19:31:19.958556 after 62.59 seconds
+[0m19:31:19.958964 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:31:19.959211 [debug] [MainThread]: On debug: Close
+[0m19:31:20.259943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057ca510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a94e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057b22d0>]}
+[0m19:31:20.261380 [debug] [MainThread]: Flushing usage events
+[0m19:31:21.369912 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:31:49.990990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0c9d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e12bd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3ed250>]}
+
+
+============================== 19:31:49.994506 | f1b8e348-d147-4d48-b09d-e800ed0c7e3a ==============================
+[0m19:31:49.994506 [info ] [MainThread]: Running with dbt=1.11.5
+[0m19:31:49.994960 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'empty': 'False', 'log_format': 'default', 'cache_selected_only': 'True', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --cache-selected-only --log-level debug', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'no_print': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'target_path': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'partial_parse': 'True', 'introspect': 'True', 'printer_width': '80'}
+[0m19:31:50.228801 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:31:50.229330 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:31:50.229591 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:31:50.356954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f1b8e348-d147-4d48-b09d-e800ed0c7e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0c8c90>]}
+[0m19:31:50.397865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f1b8e348-d147-4d48-b09d-e800ed0c7e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e109490>]}
+[0m19:31:50.398692 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m19:31:50.497500 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m19:31:50.662392 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:31:50.662751 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:31:50.662972 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:31:50.710226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f1b8e348-d147-4d48-b09d-e800ed0c7e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2b67d0>]}
+[0m19:31:50.811066 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m19:31:50.813354 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m19:31:50.830599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f1b8e348-d147-4d48-b09d-e800ed0c7e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110124410>]}
+[0m19:31:50.831038 [info ] [MainThread]: Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m19:31:50.831283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1b8e348-d147-4d48-b09d-e800ed0c7e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7bcd50>]}
+[0m19:31:50.834528 [info ] [MainThread]: 
+[0m19:31:50.834773 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:31:50.834957 [info ] [MainThread]: 
+[0m19:31:50.835308 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:31:50.838750 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO'
+[0m19:31:50.929732 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO"
+[0m19:31:50.930132 [debug] [ThreadPool]: On list_DBT_DEMO: show terse schemas in database DBT_DEMO
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO"} */
+[0m19:31:50.930393 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:33:51.341536 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database DBT_DEMO
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO"} */
+[0m19:33:51.342136 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:33:51.342542 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:33:51.342817 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:33:51.344031 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:33:51.345101 [debug] [MainThread]: Connection 'list_DBT_DEMO' was left open.
+[0m19:33:51.345633 [debug] [MainThread]: On list_DBT_DEMO: No close available on handle
+[0m19:33:51.346001 [info ] [MainThread]: 
+[0m19:33:51.346326 [info ] [MainThread]: Finished running  in 0 hours 2 minutes and 0.51 seconds (120.51s).
+[0m19:33:51.346849 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "DBT_DEMO"
+  Database Error
+    250001: Could not connect to Snowflake backend after 1 attempt(s).Aborting
+[0m19:33:51.349891 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 121.41147, "process_in_blocks": "0", "process_kernel_time": 0.322132, "process_mem_max_rss": "158580736", "process_out_blocks": "0", "process_user_time": 1.741142}
+[0m19:33:51.350411 [debug] [MainThread]: Command `dbt run` failed at 19:33:51.350336 after 121.41 seconds
+[0m19:33:51.350857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105076850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4185d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051e0250>]}
+[0m19:33:51.351260 [debug] [MainThread]: Flushing usage events
+[0m19:33:52.450559 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:36:47.783818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cad3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0d710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0fcd0>]}
+
+
+============================== 19:36:47.787584 | 1f65f014-d213-4935-9b3b-11dcae99e074 ==============================
+[0m19:36:47.787584 [info ] [MainThread]: Running with dbt=1.11.5
+[0m19:36:47.788039 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --log-level debug', 'target_path': 'None', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'static_parser': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'no_print': 'None', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'empty': 'False', 'warn_error': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'introspect': 'True'}
+[0m19:36:48.023880 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:36:48.024340 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:36:48.024604 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:36:48.151503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d45310>]}
+[0m19:36:48.191235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e714d0>]}
+[0m19:36:48.192084 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m19:36:48.293016 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m19:36:48.390254 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m19:36:48.390678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e7fad0>]}
+[0m19:36:49.685451 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_trades' in
+package 'bain_capital_portfolio_analytics' (models/pipeline_b/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m19:36:49.686019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c21c4d0>]}
+[0m19:36:49.983684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c283390>]}
+[0m19:36:50.083697 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m19:36:50.086145 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m19:36:50.108392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bcea810>]}
+[0m19:36:50.108840 [info ] [MainThread]: Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m19:36:50.109088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1f65f014-d213-4935-9b3b-11dcae99e074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d66c10>]}
+[0m19:36:50.112248 [info ] [MainThread]: 
+[0m19:36:50.112494 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:36:50.112679 [info ] [MainThread]: 
+[0m19:36:50.112992 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:36:50.116188 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO'
+[0m19:36:50.163531 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO"
+[0m19:36:50.163957 [debug] [ThreadPool]: On list_DBT_DEMO: show terse schemas in database DBT_DEMO
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO"} */
+[0m19:36:50.164206 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:37:52.187458 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 62.023 seconds
+[0m19:37:52.189976 [debug] [ThreadPool]: On list_DBT_DEMO: Close
+[0m19:37:52.973046 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_DEMO, now list_DBT_DEMO_DEV_pipeline_a)
+[0m19:37:52.973789 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO_DEV'
+[0m19:37:52.974318 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO_DEV_pipeline_b'
+[0m19:37:52.975254 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_DEMO_DEV_pipeline_c'
+[0m19:37:52.989491 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV_pipeline_a"
+[0m19:37:52.995180 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV_pipeline_b"
+[0m19:37:52.997102 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV_pipeline_c"
+[0m19:37:52.997836 [debug] [ThreadPool]: Using snowflake connection "list_DBT_DEMO_DEV"
+[0m19:37:52.998120 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_a: show objects in DBT_DEMO.DEV_pipeline_a
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_a"} */;
+[0m19:37:52.998368 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_b: show objects in DBT_DEMO.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_b"} */;
+[0m19:37:52.998606 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_c: show objects in DBT_DEMO.DEV_pipeline_c
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_c"} */;
+[0m19:37:52.998841 [debug] [ThreadPool]: On list_DBT_DEMO_DEV: show objects in DBT_DEMO.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV"} */;
+[0m19:37:52.999076 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:37:52.999285 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:37:52.999495 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:37:52.999692 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:37:54.461642 [debug] [ThreadPool]: SQL status: SUCCESS 45 in 1.462 seconds
+[0m19:37:54.466923 [debug] [ThreadPool]: On list_DBT_DEMO_DEV: Close
+[0m19:37:54.591302 [debug] [ThreadPool]: SQL status: SUCCESS 19 in 1.592 seconds
+[0m19:37:54.594948 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_c: Close
+[0m19:38:54.843714 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 61.844 seconds
+[0m19:38:54.848296 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_a: Close
+[0m19:39:53.254248 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show objects in DBT_DEMO.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_DBT_DEMO_DEV_pipeline_b"} */;
+[0m19:39:53.254874 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:39:53.255349 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:39:53.255645 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:39:53.256014 [debug] [ThreadPool]: On list_DBT_DEMO_DEV_pipeline_b: No close available on handle
+[0m19:39:53.257055 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:39:53.257451 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV_pipeline_a' was properly closed.
+[0m19:39:53.257720 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV' was properly closed.
+[0m19:39:53.257978 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV_pipeline_b' was properly closed.
+[0m19:39:53.258229 [debug] [MainThread]: Connection 'list_DBT_DEMO_DEV_pipeline_c' was properly closed.
+[0m19:39:53.258703 [info ] [MainThread]: 
+[0m19:39:53.259116 [info ] [MainThread]: Finished running  in 0 hours 3 minutes and 3.15 seconds (183.15s).
+[0m19:39:53.260104 [error] [MainThread]: Encountered an error:
+Database Error
+  250001: Could not connect to Snowflake backend after 1 attempt(s).Aborting
+[0m19:39:53.261178 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 10 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:39:53.265075 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 185.53175, "process_in_blocks": "0", "process_kernel_time": 0.412076, "process_mem_max_rss": "179847168", "process_out_blocks": "0", "process_user_time": 3.543802}
+[0m19:39:53.265657 [debug] [MainThread]: Command `dbt run` failed at 19:39:53.265558 after 185.53 seconds
+[0m19:39:53.266233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0c150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c572b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0d710>]}
+[0m19:39:53.266940 [debug] [MainThread]: Flushing usage events
+[0m19:39:54.318826 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:08:23.332278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d208a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d266f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d20d050>]}
+
+
+============================== 20:08:23.336433 | 268e1673-89c1-4aca-9310-dbced1d8dddd ==============================
+[0m20:08:23.336433 [info ] [MainThread]: Running with dbt=1.11.5
+[0m20:08:23.336965 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --log-level debug', 'log_cache_events': 'False', 'debug': 'False', 'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'log_format': 'default', 'quiet': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'static_parser': 'True', 'use_colors': 'True', 'write_json': 'True', 'partial_parse': 'True', 'no_print': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'empty': 'False'}
+[0m20:08:23.571416 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:08:23.571911 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:08:23.572171 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:08:23.699091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e33c090>]}
+[0m20:08:23.741234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d28d450>]}
+[0m20:08:23.742119 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m20:08:23.842968 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m20:08:23.940630 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m20:08:23.941084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c3e3a10>]}
+[0m20:08:25.233062 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_trades' in
+package 'bain_capital_portfolio_analytics' (models/pipeline_b/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m20:08:25.233542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f219ad0>]}
+[0m20:08:25.538595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f82f950>]}
+[0m20:08:25.636588 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m20:08:25.639142 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m20:08:25.661828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1a4690>]}
+[0m20:08:25.662259 [info ] [MainThread]: Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m20:08:25.662504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e316e90>]}
+[0m20:08:25.665654 [info ] [MainThread]: 
+[0m20:08:25.665907 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:08:25.666102 [info ] [MainThread]: 
+[0m20:08:25.666433 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:08:25.669660 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_BAIN_ANALYTICS'
+[0m20:08:25.723411 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS"
+[0m20:08:25.723935 [debug] [ThreadPool]: On list_BAIN_ANALYTICS: show terse schemas in database BAIN_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS"} */
+[0m20:08:25.724218 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:27.956362 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 2.232 seconds
+[0m20:08:27.959283 [debug] [ThreadPool]: On list_BAIN_ANALYTICS: Close
+[0m20:08:28.637329 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS, now list_BAIN_ANALYTICS_DEV)
+[0m20:08:28.652372 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV"
+[0m20:08:28.652835 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: show objects in BAIN_ANALYTICS.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV"} */;
+[0m20:08:28.653142 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:08:30.454099 [debug] [ThreadPool]: SQL status: SUCCESS 88 in 1.801 seconds
+[0m20:08:30.461213 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: Close
+[0m20:08:31.109175 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV, now list_BAIN_ANALYTICS_DEV_pipeline_b)
+[0m20:08:31.122777 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_b"
+[0m20:08:31.123256 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_b: show objects in BAIN_ANALYTICS.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_b"} */;
+[0m20:08:31.123564 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:08:33.080016 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.956 seconds
+[0m20:08:33.081821 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_b: Close
+[0m20:08:33.946854 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_b, now list_BAIN_ANALYTICS_DEV_pipeline_c)
+[0m20:08:33.951712 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_c"
+[0m20:08:33.952118 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_c: show objects in BAIN_ANALYTICS.DEV_pipeline_c
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_c"} */;
+[0m20:08:33.952408 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:08:35.839817 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.887 seconds
+[0m20:08:35.843601 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_c: Close
+[0m20:08:36.624005 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_c, now list_BAIN_ANALYTICS_DEV_pipeline_a)
+[0m20:08:36.628733 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_a"
+[0m20:08:36.629170 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_a: show objects in BAIN_ANALYTICS.DEV_pipeline_a
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_a"} */;
+[0m20:08:36.629446 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:08:38.691321 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.062 seconds
+[0m20:08:38.694452 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_a: Close
+[0m20:08:39.442495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f80b290>]}
+[0m20:08:39.447902 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:08:39.448685 [info ] [Thread-7 (]: 1 of 4 START sql view model DEV_pipeline_a.stg_cashflows ....................... [RUN]
+[0m20:08:39.449181 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_a, now model.bain_capital_portfolio_analytics.stg_cashflows)
+[0m20:08:39.449571 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:08:39.458877 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:08:39.460571 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:08:39.482868 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:08:39.484811 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:08:39.485161 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_cashflows: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_cashflows
+-- Description: Staging model for raw cashflow data
+--
+
+with source as (
+    select distinct
+        cashflow_id,
+        portfolio_id,
+        cashflow_type,
+        cashflow_date,
+        amount,
+        currency,
+        created_at,
+        updated_at
+    from BAIN_ANALYTICS.DEV.SAMPLE_CASHFLOWS
+),
+
+converted as (
+    select
+        cashflow_id,
+        portfolio_id,
+        upper(cashflow_type) as cashflow_type,
+        cast(cashflow_date as date) as cashflow_date,
+        cast(amount as decimal(18,2)) as amount,
+        upper(currency) as currency,
+        cast(created_at as timestamp) as created_at,
+        cast(updated_at as timestamp) as updated_at
+    from source
+),
+
+filtered as (
+    select *
+    from converted
+    where cashflow_date >= '2020-01-01'
+      and cashflow_date <= '2024-12-31'
+)
+
+select * from filtered
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_cashflows"} */;
+[0m20:08:39.485495 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:08:41.714504 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 2.229 seconds
+[0m20:08:41.732238 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_cashflows: Close
+[0m20:08:42.682332 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fda1250>]}
+[0m20:08:42.683306 [info ] [Thread-7 (]: 1 of 4 OK created sql view model DEV_pipeline_a.stg_cashflows .................. [[32mSUCCESS 1[0m in 3.23s]
+[0m20:08:42.683838 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:08:42.684205 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:08:42.684718 [info ] [Thread-7 (]: 2 of 4 START sql view model DEV_pipeline_a.stg_portfolios ...................... [RUN]
+[0m20:08:42.685170 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_cashflows, now model.bain_capital_portfolio_analytics.stg_portfolios)
+[0m20:08:42.685499 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:08:42.688504 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:08:42.689148 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:08:42.691270 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:08:42.692422 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:08:42.692735 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_portfolios: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_portfolios
+-- Description: Staging model for portfolio master data
+--
+
+with source as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        currency,
+        created_at,
+        updated_at,
+        row_number() over (
+            partition by portfolio_id
+            order by updated_at desc
+        ) as rn
+    from BAIN_ANALYTICS.DEV.SAMPLE_PORTFOLIOS
+),
+
+deduplicated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        currency,
+        created_at,
+        updated_at
+    from source
+    where rn = 1
+),
+
+active_only as (
+    select *
+    from deduplicated
+    where status = 'ACTIVE'
+)
+
+select * from active_only
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_portfolios"} */;
+[0m20:08:42.693019 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:08:45.170942 [debug] [Thread-7 (]: Snowflake adapter: Snowflake query id: 01c27466-0307-cce4-001d-8453000e2072
+[0m20:08:45.171746 [debug] [Thread-7 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 20 at position 8
+invalid identifier 'CURRENCY'
+[0m20:08:45.172318 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_portfolios: Close
+[0m20:08:46.434340 [debug] [Thread-7 (]: Database Error in model stg_portfolios (models/pipeline_a/staging/stg_portfolios.sql)
+  000904 (42000): SQL compilation error: error line 20 at position 8
+  invalid identifier 'CURRENCY'
+  compiled code at target/run/bain_capital_portfolio_analytics/models/pipeline_a/staging/stg_portfolios.sql
+[0m20:08:46.435131 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '268e1673-89c1-4aca-9310-dbced1d8dddd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f45ab50>]}
+[0m20:08:46.435792 [error] [Thread-7 (]: 2 of 4 ERROR creating sql view model DEV_pipeline_a.stg_portfolios ............. [[31mERROR[0m in 3.75s]
+[0m20:08:46.436260 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:08:46.436758 [debug] [Thread-10 ]: Marking all children of 'model.bain_capital_portfolio_analytics.stg_portfolios' to be skipped because of status 'error'.  Reason: Database Error in model stg_portfolios (models/pipeline_a/staging/stg_portfolios.sql)
+  000904 (42000): SQL compilation error: error line 20 at position 8
+  invalid identifier 'CURRENCY'
+  compiled code at target/run/bain_capital_portfolio_analytics/models/pipeline_a/staging/stg_portfolios.sql.
+[0m20:08:46.438068 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:08:46.438465 [info ] [Thread-7 (]: 3 of 4 SKIP relation DEV_pipeline_a.fact_cashflow_summary ...................... [[33mSKIP[0m]
+[0m20:08:46.438779 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:08:46.439271 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:08:46.439557 [info ] [Thread-7 (]: 4 of 4 SKIP relation DEV_pipeline_a.report_monthly_cashflows ................... [[33mSKIP[0m]
+[0m20:08:46.439820 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:08:46.440715 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:08:46.440949 [debug] [MainThread]: Connection 'model.bain_capital_portfolio_analytics.stg_portfolios' was properly closed.
+[0m20:08:46.441245 [info ] [MainThread]: 
+[0m20:08:46.441479 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 20.77 seconds (20.77s).
+[0m20:08:46.442066 [debug] [MainThread]: Command end result
+[0m20:08:46.488847 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m20:08:46.490447 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m20:08:46.495378 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/run_results.json
+[0m20:08:46.495638 [info ] [MainThread]: 
+[0m20:08:46.495868 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m20:08:46.496064 [info ] [MainThread]: 
+[0m20:08:46.496316 [error] [MainThread]: [31mFailure in model stg_portfolios (models/pipeline_a/staging/stg_portfolios.sql)[0m
+[0m20:08:46.496557 [error] [MainThread]:   Database Error in model stg_portfolios (models/pipeline_a/staging/stg_portfolios.sql)
+  000904 (42000): SQL compilation error: error line 20 at position 8
+  invalid identifier 'CURRENCY'
+  compiled code at target/run/bain_capital_portfolio_analytics/models/pipeline_a/staging/stg_portfolios.sql
+[0m20:08:46.496741 [info ] [MainThread]: 
+[0m20:08:46.496952 [info ] [MainThread]:   compiled code at target/compiled/bain_capital_portfolio_analytics/models/pipeline_a/staging/stg_portfolios.sql
+[0m20:08:46.497133 [info ] [MainThread]: 
+[0m20:08:46.497336 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=4
+[0m20:08:46.497707 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 10 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:08:46.500469 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 23.220068, "process_in_blocks": "0", "process_kernel_time": 0.425324, "process_mem_max_rss": "180862976", "process_out_blocks": "0", "process_user_time": 3.847436}
+[0m20:08:46.500794 [debug] [MainThread]: Command `dbt run` failed at 20:08:46.500738 after 23.22 seconds
+[0m20:08:46.501083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d28ce50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d28d590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f78e690>]}
+[0m20:08:46.501350 [debug] [MainThread]: Flushing usage events
+[0m20:08:47.905817 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:11:21.704671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d626290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d626250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d646790>]}
+
+
+============================== 20:11:21.708922 | 8e4d8631-c645-4df4-887b-10c7ade4db48 ==============================
+[0m20:11:21.708922 [info ] [MainThread]: Running with dbt=1.11.5
+[0m20:11:21.709395 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_format': 'default', 'fail_fast': 'False', 'target_path': 'None', 'introspect': 'True', 'empty': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'printer_width': '80', 'warn_error': 'None', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --log-level debug', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m20:11:21.940830 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:11:21.941288 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:11:21.941559 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:11:22.066194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad62490>]}
+[0m20:11:22.106768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7f5650>]}
+[0m20:11:22.107648 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m20:11:22.211971 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m20:11:22.378524 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:11:22.379389 [debug] [MainThread]: Partial parsing: updated file: bain_capital_portfolio_analytics://models/pipeline_a/staging/stg_cashflows.sql
+[0m20:11:22.379641 [debug] [MainThread]: Partial parsing: updated file: bain_capital_portfolio_analytics://models/pipeline_a/staging/stg_portfolios.sql
+[0m20:11:22.612930 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_cashflows' in
+package 'bain_capital_portfolio_analytics' (models/pipeline_a/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m20:11:22.613568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e7e4e10>]}
+[0m20:11:22.757960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa96710>]}
+[0m20:11:22.860887 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m20:11:22.863200 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m20:11:22.886971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbad510>]}
+[0m20:11:22.887394 [info ] [MainThread]: Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m20:11:22.887627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f65b590>]}
+[0m20:11:22.890791 [info ] [MainThread]: 
+[0m20:11:22.891039 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:11:22.891226 [info ] [MainThread]: 
+[0m20:11:22.891560 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:11:22.894762 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_BAIN_ANALYTICS'
+[0m20:11:22.940870 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS"
+[0m20:11:22.941238 [debug] [ThreadPool]: On list_BAIN_ANALYTICS: show terse schemas in database BAIN_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS"} */
+[0m20:11:22.941460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:11:24.580620 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.639 seconds
+[0m20:11:24.583020 [debug] [ThreadPool]: On list_BAIN_ANALYTICS: Close
+[0m20:11:25.254867 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS, now list_BAIN_ANALYTICS_DEV_pipeline_a)
+[0m20:11:25.267889 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_a"
+[0m20:11:25.268287 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_a: show objects in BAIN_ANALYTICS.DEV_pipeline_a
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_a"} */;
+[0m20:11:25.268756 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:11:26.951364 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.682 seconds
+[0m20:11:26.955697 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_a: Close
+[0m20:11:27.763727 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_a, now list_BAIN_ANALYTICS_DEV_pipeline_b)
+[0m20:11:27.768951 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_b"
+[0m20:11:27.769409 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_b: show objects in BAIN_ANALYTICS.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_b"} */;
+[0m20:11:27.769728 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:11:30.133407 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.364 seconds
+[0m20:11:30.135898 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_b: Close
+[0m20:11:30.759821 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_b, now list_BAIN_ANALYTICS_DEV)
+[0m20:11:30.764737 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV"
+[0m20:11:30.765165 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: show objects in BAIN_ANALYTICS.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV"} */;
+[0m20:11:30.765474 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:11:32.331322 [debug] [ThreadPool]: SQL status: SUCCESS 88 in 1.566 seconds
+[0m20:11:32.337862 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: Close
+[0m20:11:33.164693 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV, now list_BAIN_ANALYTICS_DEV_pipeline_c)
+[0m20:11:33.178225 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_c"
+[0m20:11:33.178552 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_c: show objects in BAIN_ANALYTICS.DEV_pipeline_c
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_c"} */;
+[0m20:11:33.178788 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:11:35.570787 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.392 seconds
+[0m20:11:35.573675 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_c: Close
+[0m20:11:36.312736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa96210>]}
+[0m20:11:36.318365 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:11:36.319099 [info ] [Thread-7 (]: 1 of 4 START sql view model DEV_pipeline_a.stg_cashflows ....................... [RUN]
+[0m20:11:36.319563 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_c, now model.bain_capital_portfolio_analytics.stg_cashflows)
+[0m20:11:36.319936 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:11:36.329251 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:11:36.330447 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:11:36.352531 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:11:36.354101 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:11:36.354441 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_cashflows: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_cashflows
+-- Description: Staging model for raw cashflow data
+--
+
+with source as (
+    select distinct
+        cashflow_id,
+        portfolio_id,
+        cashflow_type,
+        cashflow_date,
+        amount,
+        currency,
+        created_at,
+        updated_at
+    from BAIN_ANALYTICS.DEV.SAMPLE_CASHFLOWS
+),
+
+converted as (
+    select
+        cashflow_id,
+        portfolio_id,
+        upper(cashflow_type) as cashflow_type,
+        cast(cashflow_date as date) as cashflow_date,
+        cast(amount as decimal(18,2)) as amount,
+        upper(currency) as currency,
+        cast(created_at as timestamp) as created_at,
+        cast(updated_at as timestamp) as updated_at
+    from source
+),
+
+filtered as (
+    select *
+    from converted
+    where cashflow_date >= '2020-01-01'
+      and cashflow_date <= '2024-12-31'
+)
+
+select * from filtered
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_cashflows"} */;
+[0m20:11:36.354746 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:11:38.747424 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 2.392 seconds
+[0m20:11:38.772270 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_cashflows: Close
+[0m20:11:39.432212 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea765d0>]}
+[0m20:11:39.433052 [info ] [Thread-7 (]: 1 of 4 OK created sql view model DEV_pipeline_a.stg_cashflows .................. [[32mSUCCESS 1[0m in 3.11s]
+[0m20:11:39.433549 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:11:39.433889 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:11:39.434410 [info ] [Thread-7 (]: 2 of 4 START sql view model DEV_pipeline_a.stg_portfolios ...................... [RUN]
+[0m20:11:39.434871 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_cashflows, now model.bain_capital_portfolio_analytics.stg_portfolios)
+[0m20:11:39.435208 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:11:39.437859 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:11:39.438409 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:11:39.440448 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:11:39.441476 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:11:39.441780 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_portfolios: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_portfolios
+-- Description: Staging model for portfolio master data
+--
+
+with source as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        aum_usd,
+        row_number() over (
+            partition by portfolio_id
+            order by portfolio_id desc
+        ) as rn
+    from BAIN_ANALYTICS.DEV.SAMPLE_PORTFOLIOS
+),
+
+deduplicated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        aum_usd
+    from source
+    where rn = 1
+),
+
+active_only as (
+    select *
+    from deduplicated
+    where status = 'ACTIVE'
+)
+
+select * from active_only
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_portfolios"} */;
+[0m20:11:39.442066 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:11:41.823102 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 2.381 seconds
+[0m20:11:41.827037 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_portfolios: Close
+[0m20:11:42.516173 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd99210>]}
+[0m20:11:42.517511 [info ] [Thread-7 (]: 2 of 4 OK created sql view model DEV_pipeline_a.stg_portfolios ................. [[32mSUCCESS 1[0m in 3.08s]
+[0m20:11:42.518088 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:11:42.519072 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:11:42.519689 [info ] [Thread-7 (]: 3 of 4 START sql table model DEV_pipeline_a.fact_cashflow_summary .............. [RUN]
+[0m20:11:42.520180 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_portfolios, now model.bain_capital_portfolio_analytics.fact_cashflow_summary)
+[0m20:11:42.520573 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:11:42.536309 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m20:11:42.537281 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:11:42.554318 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m20:11:42.560740 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m20:11:42.561383 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.fact_cashflow_summary: create or replace transient table BAIN_ANALYTICS.DEV_pipeline_a.fact_cashflow_summary
+    
+    
+    
+    as (-- Pipeline A: Simple Cashflow Pipeline
+-- Model: fact_cashflow_summary
+-- Description: Fact table summarizing cashflows by portfolio and month
+--
+
+with cashflows as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+),
+
+portfolios as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+),
+
+joined as (
+    select
+        c.cashflow_id,
+        c.portfolio_id,
+        p.portfolio_name,
+        p.portfolio_type,
+        p.fund_id,
+        c.cashflow_type,
+        c.cashflow_date,
+        c.amount,
+        c.currency,
+        date_trunc('month', c.cashflow_date) as cashflow_month,
+        date_trunc('quarter', c.cashflow_date) as cashflow_quarter,
+        date_trunc('year', c.cashflow_date) as cashflow_year,
+        extract(year from c.cashflow_date) as year_num,
+        extract(month from c.cashflow_date) as month_num,
+        extract(quarter from c.cashflow_date) as quarter_num,
+        extract(dayofmonth from c.cashflow_date) as day_num
+    from cashflows c
+    inner join portfolios p
+        on c.portfolio_id = p.portfolio_id
+),
+
+aggregated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        cashflow_month,
+        cashflow_quarter,
+        cashflow_year,
+        year_num,
+        month_num,
+        quarter_num,
+        cashflow_type,
+        currency,
+        count(*) as transaction_count,
+        count(distinct cashflow_id) as unique_transactions,
+        sum(amount) as total_amount,
+        avg(amount) as avg_amount,
+        min(amount) as min_amount,
+        max(amount) as max_amount,
+        stddev(amount) as stddev_amount,
+        percentile_cont(0.25) within group (order by amount) as p25_amount,
+        percentile_cont(0.50) within group (order by amount) as median_amount,
+        percentile_cont(0.75) within group (order by amount) as p75_amount
+    from joined
+    group by 1,2,3,4,5,6,7,8,9,10,11,12
+),
+
+with_prior_months as (
+    select
+        agg.*,
+        agg_m1.total_amount as prior_1m_total,
+        agg_m1.transaction_count as prior_1m_count,
+        agg_m3.total_amount as prior_3m_total,
+        agg_m6.total_amount as prior_6m_total,
+        agg_m12.total_amount as prior_12m_total
+    from aggregated agg
+    left join aggregated agg_m1
+        on agg.portfolio_id = agg_m1.portfolio_id
+        and agg.cashflow_type = agg_m1.cashflow_type
+        and agg.currency = agg_m1.currency
+        and agg_m1.cashflow_month = dateadd(month, -1, agg.cashflow_month)
+    left join aggregated agg_m3
+        on agg.portfolio_id = agg_m3.portfolio_id
+        and agg.cashflow_type = agg_m3.cashflow_type
+        and agg.currency = agg_m3.currency
+        and agg_m3.cashflow_month = dateadd(month, -3, agg.cashflow_month)
+    left join aggregated agg_m6
+        on agg.portfolio_id = agg_m6.portfolio_id
+        and agg.cashflow_type = agg_m6.cashflow_type
+        and agg.currency = agg_m6.currency
+        and agg_m6.cashflow_month = dateadd(month, -6, agg.cashflow_month)
+    left join aggregated agg_m12
+        on agg.portfolio_id = agg_m12.portfolio_id
+        and agg.cashflow_type = agg_m12.cashflow_type
+        and agg.currency = agg_m12.currency
+        and agg_m12.cashflow_month = dateadd(month, -12, agg.cashflow_month)
+),
+
+with_window_calcs as (
+    select
+        wpm.*,
+        sum(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_total,
+        sum(transaction_count) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_count,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 2 preceding and current row
+        ) as rolling_3m_avg,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 5 preceding and current row
+        ) as rolling_6m_avg,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_avg,
+        stddev(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_stddev,
+        min(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_min,
+        max(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_max
+    from with_prior_months wpm
+),
+
+with_fund_context as (
+    select
+        wwc.*,
+        (
+            select sum(total_amount)
+            from aggregated agg2
+            inner join portfolios p2
+                on agg2.portfolio_id = p2.portfolio_id
+            where p2.fund_id = wwc.fund_id
+            and agg2.cashflow_month = wwc.cashflow_month
+            and agg2.cashflow_type = wwc.cashflow_type
+        ) as fund_total_amount,
+        (
+            select count(distinct agg2.portfolio_id)
+            from aggregated agg2
+            inner join portfolios p2
+                on agg2.portfolio_id = p2.portfolio_id
+            where p2.fund_id = wwc.fund_id
+            and agg2.cashflow_month = wwc.cashflow_month
+            and agg2.cashflow_type = wwc.cashflow_type
+        ) as fund_portfolio_count
+    from with_window_calcs wwc
+),
+
+final as (
+    select
+        md5(cast(coalesce(cast(wfc.portfolio_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.cashflow_month as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.cashflow_type as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.currency as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as cashflow_summary_key,
+        wfc.*,
+        case
+            when wfc.fund_total_amount > 0
+            then (wfc.total_amount / wfc.fund_total_amount) * 100
+            else null
+        end as portfolio_share_of_fund_pct,
+        case
+            when wfc.prior_1m_total is not null and wfc.prior_1m_total != 0
+            then ((wfc.total_amount - wfc.prior_1m_total) / abs(wfc.prior_1m_total)) * 100
+            else null
+        end as mom_growth_pct,
+        case
+            when wfc.prior_3m_total is not null and wfc.prior_3m_total != 0
+            then ((wfc.total_amount - wfc.prior_3m_total) / abs(wfc.prior_3m_total)) * 100
+            else null
+        end as growth_3m_pct,
+        case
+            when wfc.prior_12m_total is not null and wfc.prior_12m_total != 0
+            then ((wfc.total_amount - wfc.prior_12m_total) / abs(wfc.prior_12m_total)) * 100
+            else null
+        end as yoy_growth_pct,
+        case
+            when wfc.rolling_3m_avg > wfc.rolling_12m_avg * 1.3 then 'ACCELERATING'
+            when wfc.rolling_3m_avg > wfc.rolling_12m_avg * 1.1 then 'GROWING'
+            when wfc.rolling_3m_avg < wfc.rolling_12m_avg * 0.7 then 'DECLINING_FAST'
+            when wfc.rolling_3m_avg < wfc.rolling_12m_avg * 0.9 then 'DECLINING'
+            else 'STABLE'
+        end as trend_classification,
+        case
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.1 then 'LOW_VOLATILITY'
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.3 then 'MODERATE_VOLATILITY'
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.5 then 'HIGH_VOLATILITY'
+            else 'VERY_HIGH_VOLATILITY'
+        end as volatility_classification,
+        case
+            when abs(wfc.total_amount) >= 10000000 then 'MEGA'
+            when abs(wfc.total_amount) >= 5000000 then 'LARGE'
+            when abs(wfc.total_amount) >= 1000000 then 'MEDIUM'
+            when abs(wfc.total_amount) >= 100000 then 'SMALL'
+            else 'MICRO'
+        end as transaction_size_category
+    from with_fund_context wfc
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.fact_cashflow_summary"} */;
+[0m20:11:42.561984 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:11:48.751076 [debug] [Thread-7 (]: Snowflake adapter: Snowflake query id: 01c27469-0307-cc66-001d-8453000e109a
+[0m20:11:48.751902 [debug] [Thread-7 (]: Snowflake adapter: Snowflake error: 100038 (22018): Numeric value 'PF009' is not recognized
+[0m20:11:48.752516 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.fact_cashflow_summary: Close
+[0m20:11:49.637362 [debug] [Thread-7 (]: Database Error in model fact_cashflow_summary (models/pipeline_a/marts/fact_cashflow_summary.sql)
+  100038 (22018): Numeric value 'PF009' is not recognized
+  compiled code at target/run/bain_capital_portfolio_analytics/models/pipeline_a/marts/fact_cashflow_summary.sql
+[0m20:11:49.638409 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e4d8631-c645-4df4-887b-10c7ade4db48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f625c50>]}
+[0m20:11:49.639377 [error] [Thread-7 (]: 3 of 4 ERROR creating sql table model DEV_pipeline_a.fact_cashflow_summary ..... [[31mERROR[0m in 7.12s]
+[0m20:11:49.639969 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:11:49.640560 [debug] [Thread-10 ]: Marking all children of 'model.bain_capital_portfolio_analytics.fact_cashflow_summary' to be skipped because of status 'error'.  Reason: Database Error in model fact_cashflow_summary (models/pipeline_a/marts/fact_cashflow_summary.sql)
+  100038 (22018): Numeric value 'PF009' is not recognized
+  compiled code at target/run/bain_capital_portfolio_analytics/models/pipeline_a/marts/fact_cashflow_summary.sql.
+[0m20:11:49.642172 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:11:49.642581 [info ] [Thread-7 (]: 4 of 4 SKIP relation DEV_pipeline_a.report_monthly_cashflows ................... [[33mSKIP[0m]
+[0m20:11:49.642917 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:11:49.644051 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:11:49.644420 [debug] [MainThread]: Connection 'model.bain_capital_portfolio_analytics.fact_cashflow_summary' was properly closed.
+[0m20:11:49.644886 [info ] [MainThread]: 
+[0m20:11:49.645169 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 26.75 seconds (26.75s).
+[0m20:11:49.645946 [debug] [MainThread]: Command end result
+[0m20:11:49.690673 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m20:11:49.692477 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m20:11:49.697065 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/run_results.json
+[0m20:11:49.697307 [info ] [MainThread]: 
+[0m20:11:49.697536 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m20:11:49.697725 [info ] [MainThread]: 
+[0m20:11:49.697966 [error] [MainThread]: [31mFailure in model fact_cashflow_summary (models/pipeline_a/marts/fact_cashflow_summary.sql)[0m
+[0m20:11:49.698205 [error] [MainThread]:   Database Error in model fact_cashflow_summary (models/pipeline_a/marts/fact_cashflow_summary.sql)
+  100038 (22018): Numeric value 'PF009' is not recognized
+  compiled code at target/run/bain_capital_portfolio_analytics/models/pipeline_a/marts/fact_cashflow_summary.sql
+[0m20:11:49.698393 [info ] [MainThread]: 
+[0m20:11:49.698610 [info ] [MainThread]:   compiled code at target/compiled/bain_capital_portfolio_analytics/models/pipeline_a/marts/fact_cashflow_summary.sql
+[0m20:11:49.698789 [info ] [MainThread]: 
+[0m20:11:49.698993 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=4
+[0m20:11:49.699362 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:11:49.701780 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 28.051523, "process_in_blocks": "0", "process_kernel_time": 0.413373, "process_mem_max_rss": "178012160", "process_out_blocks": "0", "process_user_time": 2.86444}
+[0m20:11:49.702100 [debug] [MainThread]: Command `dbt run` failed at 20:11:49.702045 after 28.05 seconds
+[0m20:11:49.702376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093cad10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d688050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d689110>]}
+[0m20:11:49.702639 [debug] [MainThread]: Flushing usage events
+[0m20:11:51.158042 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:13:29.368620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092ebbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934ced0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936d890>]}
+
+
+============================== 20:13:29.373126 | 5de5792b-4a09-4614-8b04-25a27651a2ce ==============================
+[0m20:13:29.373126 [info ] [MainThread]: Running with dbt=1.11.5
+[0m20:13:29.373626 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'version_check': 'True', 'log_format': 'default', 'static_parser': 'True', 'use_colors': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'target_path': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'write_json': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --log-level debug', 'debug': 'False'}
+[0m20:13:29.665708 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:13:29.666186 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:13:29.666451 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:13:29.792680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a42b8d0>]}
+[0m20:13:29.832700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084b9450>]}
+[0m20:13:29.833499 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m20:13:29.938102 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m20:13:30.105284 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:13:30.106121 [debug] [MainThread]: Partial parsing: updated file: bain_capital_portfolio_analytics://models/pipeline_a/staging/stg_cashflows.sql
+[0m20:13:30.342086 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_cashflows' in
+package 'bain_capital_portfolio_analytics' (models/pipeline_a/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m20:13:30.342576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b740bd0>]}
+[0m20:13:30.480763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4db7d0>]}
+[0m20:13:30.584405 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m20:13:30.586946 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m20:13:30.609324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6e4590>]}
+[0m20:13:30.609790 [info ] [MainThread]: Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m20:13:30.610041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a47e4d0>]}
+[0m20:13:30.613321 [info ] [MainThread]: 
+[0m20:13:30.613609 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:13:30.613812 [info ] [MainThread]: 
+[0m20:13:30.614164 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:13:30.617445 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_BAIN_ANALYTICS'
+[0m20:13:30.662775 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS"
+[0m20:13:30.663117 [debug] [ThreadPool]: On list_BAIN_ANALYTICS: show terse schemas in database BAIN_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS"} */
+[0m20:13:30.663341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:13:33.464866 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 2.801 seconds
+[0m20:13:33.466780 [debug] [ThreadPool]: On list_BAIN_ANALYTICS: Close
+[0m20:13:34.178912 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS, now list_BAIN_ANALYTICS_DEV_pipeline_a)
+[0m20:13:34.189061 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_a"
+[0m20:13:34.189382 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_a: show objects in BAIN_ANALYTICS.DEV_pipeline_a
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_a"} */;
+[0m20:13:34.189739 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:13:35.921989 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.732 seconds
+[0m20:13:35.925322 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_a: Close
+[0m20:13:36.837723 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_a, now list_BAIN_ANALYTICS_DEV_pipeline_c)
+[0m20:13:36.843028 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_c"
+[0m20:13:36.843474 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_c: show objects in BAIN_ANALYTICS.DEV_pipeline_c
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_c"} */;
+[0m20:13:36.843770 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:13:38.697574 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.854 seconds
+[0m20:13:38.700119 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_c: Close
+[0m20:13:39.595351 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_c, now list_BAIN_ANALYTICS_DEV)
+[0m20:13:39.599725 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV"
+[0m20:13:39.600192 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: show objects in BAIN_ANALYTICS.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV"} */;
+[0m20:13:39.600480 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:13:41.694414 [debug] [ThreadPool]: SQL status: SUCCESS 88 in 2.094 seconds
+[0m20:13:41.700072 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: Close
+[0m20:13:42.367661 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV, now list_BAIN_ANALYTICS_DEV_pipeline_b)
+[0m20:13:42.381633 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_b"
+[0m20:13:42.382334 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_b: show objects in BAIN_ANALYTICS.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_b"} */;
+[0m20:13:42.382658 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:13:44.554596 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.172 seconds
+[0m20:13:44.558169 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV_pipeline_b: Close
+[0m20:13:45.234747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba43410>]}
+[0m20:13:45.239828 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:13:45.240609 [info ] [Thread-7 (]: 1 of 4 START sql view model DEV_pipeline_a.stg_cashflows ....................... [RUN]
+[0m20:13:45.241127 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_b, now model.bain_capital_portfolio_analytics.stg_cashflows)
+[0m20:13:45.241527 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:13:45.250737 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:13:45.251962 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:13:45.273855 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:13:45.275592 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m20:13:45.275951 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_cashflows: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_cashflows
+-- Description: Staging model for raw cashflow data
+--
+
+with source as (
+    select distinct
+        cashflow_id,
+        portfolio_id,
+        cashflow_type,
+        cashflow_date,
+        amount,
+        currency,
+        created_at,
+        updated_at
+    from BAIN_ANALYTICS.DEV.SAMPLE_CASHFLOWS
+),
+
+converted as (
+    select
+        cashflow_id,
+        'PF' || lpad(cast(portfolio_id as varchar), 3, '0') as portfolio_id,
+        upper(cashflow_type) as cashflow_type,
+        cast(cashflow_date as date) as cashflow_date,
+        cast(amount as decimal(18,2)) as amount,
+        upper(currency) as currency,
+        cast(created_at as timestamp) as created_at,
+        cast(updated_at as timestamp) as updated_at
+    from source
+),
+
+filtered as (
+    select *
+    from converted
+    where cashflow_date >= '2020-01-01'
+      and cashflow_date <= '2024-12-31'
+)
+
+select * from filtered
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_cashflows"} */;
+[0m20:13:45.276268 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:13:48.175985 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 2.899 seconds
+[0m20:13:48.201158 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_cashflows: Close
+[0m20:13:48.831714 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc8e310>]}
+[0m20:13:48.832484 [info ] [Thread-7 (]: 1 of 4 OK created sql view model DEV_pipeline_a.stg_cashflows .................. [[32mSUCCESS 1[0m in 3.59s]
+[0m20:13:48.832977 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m20:13:48.833343 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:13:48.833871 [info ] [Thread-7 (]: 2 of 4 START sql view model DEV_pipeline_a.stg_portfolios ...................... [RUN]
+[0m20:13:48.834320 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_cashflows, now model.bain_capital_portfolio_analytics.stg_portfolios)
+[0m20:13:48.834664 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:13:48.837541 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:13:48.838330 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:13:48.842126 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:13:48.843503 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m20:13:48.843859 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_portfolios: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_portfolios
+-- Description: Staging model for portfolio master data
+--
+
+with source as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        aum_usd,
+        row_number() over (
+            partition by portfolio_id
+            order by portfolio_id desc
+        ) as rn
+    from BAIN_ANALYTICS.DEV.SAMPLE_PORTFOLIOS
+),
+
+deduplicated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        aum_usd
+    from source
+    where rn = 1
+),
+
+active_only as (
+    select *
+    from deduplicated
+    where status = 'ACTIVE'
+)
+
+select * from active_only
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_portfolios"} */;
+[0m20:13:48.844175 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:13:50.863595 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 2.019 seconds
+[0m20:13:50.866631 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.stg_portfolios: Close
+[0m20:13:51.502233 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdc2250>]}
+[0m20:13:51.503437 [info ] [Thread-7 (]: 2 of 4 OK created sql view model DEV_pipeline_a.stg_portfolios ................. [[32mSUCCESS 1[0m in 2.67s]
+[0m20:13:51.503942 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m20:13:51.504883 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:13:51.505390 [info ] [Thread-7 (]: 3 of 4 START sql table model DEV_pipeline_a.fact_cashflow_summary .............. [RUN]
+[0m20:13:51.505791 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_portfolios, now model.bain_capital_portfolio_analytics.fact_cashflow_summary)
+[0m20:13:51.506112 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:13:51.519314 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m20:13:51.521088 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:13:51.538583 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m20:13:51.545239 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m20:13:51.545915 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.fact_cashflow_summary: create or replace transient table BAIN_ANALYTICS.DEV_pipeline_a.fact_cashflow_summary
+    
+    
+    
+    as (-- Pipeline A: Simple Cashflow Pipeline
+-- Model: fact_cashflow_summary
+-- Description: Fact table summarizing cashflows by portfolio and month
+--
+
+with cashflows as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+),
+
+portfolios as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+),
+
+joined as (
+    select
+        c.cashflow_id,
+        c.portfolio_id,
+        p.portfolio_name,
+        p.portfolio_type,
+        p.fund_id,
+        c.cashflow_type,
+        c.cashflow_date,
+        c.amount,
+        c.currency,
+        date_trunc('month', c.cashflow_date) as cashflow_month,
+        date_trunc('quarter', c.cashflow_date) as cashflow_quarter,
+        date_trunc('year', c.cashflow_date) as cashflow_year,
+        extract(year from c.cashflow_date) as year_num,
+        extract(month from c.cashflow_date) as month_num,
+        extract(quarter from c.cashflow_date) as quarter_num,
+        extract(dayofmonth from c.cashflow_date) as day_num
+    from cashflows c
+    inner join portfolios p
+        on c.portfolio_id = p.portfolio_id
+),
+
+aggregated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        cashflow_month,
+        cashflow_quarter,
+        cashflow_year,
+        year_num,
+        month_num,
+        quarter_num,
+        cashflow_type,
+        currency,
+        count(*) as transaction_count,
+        count(distinct cashflow_id) as unique_transactions,
+        sum(amount) as total_amount,
+        avg(amount) as avg_amount,
+        min(amount) as min_amount,
+        max(amount) as max_amount,
+        stddev(amount) as stddev_amount,
+        percentile_cont(0.25) within group (order by amount) as p25_amount,
+        percentile_cont(0.50) within group (order by amount) as median_amount,
+        percentile_cont(0.75) within group (order by amount) as p75_amount
+    from joined
+    group by 1,2,3,4,5,6,7,8,9,10,11,12
+),
+
+with_prior_months as (
+    select
+        agg.*,
+        agg_m1.total_amount as prior_1m_total,
+        agg_m1.transaction_count as prior_1m_count,
+        agg_m3.total_amount as prior_3m_total,
+        agg_m6.total_amount as prior_6m_total,
+        agg_m12.total_amount as prior_12m_total
+    from aggregated agg
+    left join aggregated agg_m1
+        on agg.portfolio_id = agg_m1.portfolio_id
+        and agg.cashflow_type = agg_m1.cashflow_type
+        and agg.currency = agg_m1.currency
+        and agg_m1.cashflow_month = dateadd(month, -1, agg.cashflow_month)
+    left join aggregated agg_m3
+        on agg.portfolio_id = agg_m3.portfolio_id
+        and agg.cashflow_type = agg_m3.cashflow_type
+        and agg.currency = agg_m3.currency
+        and agg_m3.cashflow_month = dateadd(month, -3, agg.cashflow_month)
+    left join aggregated agg_m6
+        on agg.portfolio_id = agg_m6.portfolio_id
+        and agg.cashflow_type = agg_m6.cashflow_type
+        and agg.currency = agg_m6.currency
+        and agg_m6.cashflow_month = dateadd(month, -6, agg.cashflow_month)
+    left join aggregated agg_m12
+        on agg.portfolio_id = agg_m12.portfolio_id
+        and agg.cashflow_type = agg_m12.cashflow_type
+        and agg.currency = agg_m12.currency
+        and agg_m12.cashflow_month = dateadd(month, -12, agg.cashflow_month)
+),
+
+with_window_calcs as (
+    select
+        wpm.*,
+        sum(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_total,
+        sum(transaction_count) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_count,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 2 preceding and current row
+        ) as rolling_3m_avg,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 5 preceding and current row
+        ) as rolling_6m_avg,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_avg,
+        stddev(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_stddev,
+        min(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_min,
+        max(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_max
+    from with_prior_months wpm
+),
+
+with_fund_context as (
+    select
+        wwc.*,
+        (
+            select sum(total_amount)
+            from aggregated agg2
+            inner join portfolios p2
+                on agg2.portfolio_id = p2.portfolio_id
+            where p2.fund_id = wwc.fund_id
+            and agg2.cashflow_month = wwc.cashflow_month
+            and agg2.cashflow_type = wwc.cashflow_type
+        ) as fund_total_amount,
+        (
+            select count(distinct agg2.portfolio_id)
+            from aggregated agg2
+            inner join portfolios p2
+                on agg2.portfolio_id = p2.portfolio_id
+            where p2.fund_id = wwc.fund_id
+            and agg2.cashflow_month = wwc.cashflow_month
+            and agg2.cashflow_type = wwc.cashflow_type
+        ) as fund_portfolio_count
+    from with_window_calcs wwc
+),
+
+final as (
+    select
+        md5(cast(coalesce(cast(wfc.portfolio_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.cashflow_month as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.cashflow_type as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.currency as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as cashflow_summary_key,
+        wfc.*,
+        case
+            when wfc.fund_total_amount > 0
+            then (wfc.total_amount / wfc.fund_total_amount) * 100
+            else null
+        end as portfolio_share_of_fund_pct,
+        case
+            when wfc.prior_1m_total is not null and wfc.prior_1m_total != 0
+            then ((wfc.total_amount - wfc.prior_1m_total) / abs(wfc.prior_1m_total)) * 100
+            else null
+        end as mom_growth_pct,
+        case
+            when wfc.prior_3m_total is not null and wfc.prior_3m_total != 0
+            then ((wfc.total_amount - wfc.prior_3m_total) / abs(wfc.prior_3m_total)) * 100
+            else null
+        end as growth_3m_pct,
+        case
+            when wfc.prior_12m_total is not null and wfc.prior_12m_total != 0
+            then ((wfc.total_amount - wfc.prior_12m_total) / abs(wfc.prior_12m_total)) * 100
+            else null
+        end as yoy_growth_pct,
+        case
+            when wfc.rolling_3m_avg > wfc.rolling_12m_avg * 1.3 then 'ACCELERATING'
+            when wfc.rolling_3m_avg > wfc.rolling_12m_avg * 1.1 then 'GROWING'
+            when wfc.rolling_3m_avg < wfc.rolling_12m_avg * 0.7 then 'DECLINING_FAST'
+            when wfc.rolling_3m_avg < wfc.rolling_12m_avg * 0.9 then 'DECLINING'
+            else 'STABLE'
+        end as trend_classification,
+        case
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.1 then 'LOW_VOLATILITY'
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.3 then 'MODERATE_VOLATILITY'
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.5 then 'HIGH_VOLATILITY'
+            else 'VERY_HIGH_VOLATILITY'
+        end as volatility_classification,
+        case
+            when abs(wfc.total_amount) >= 10000000 then 'MEGA'
+            when abs(wfc.total_amount) >= 5000000 then 'LARGE'
+            when abs(wfc.total_amount) >= 1000000 then 'MEDIUM'
+            when abs(wfc.total_amount) >= 100000 then 'SMALL'
+            else 'MICRO'
+        end as transaction_size_category
+    from with_fund_context wfc
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.fact_cashflow_summary"} */;
+[0m20:13:51.546541 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:13:55.403433 [debug] [Thread-7 (]: SQL status: SUCCESS 426 in 3.857 seconds
+[0m20:13:55.406978 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.fact_cashflow_summary: Close
+[0m20:13:56.024033 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc20310>]}
+[0m20:13:56.024980 [info ] [Thread-7 (]: 3 of 4 OK created sql table model DEV_pipeline_a.fact_cashflow_summary ......... [[32mSUCCESS 426[0m in 4.52s]
+[0m20:13:56.025475 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m20:13:56.026202 [debug] [Thread-7 (]: Began running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:13:56.026657 [info ] [Thread-7 (]: 4 of 4 START sql table model DEV_pipeline_a.report_monthly_cashflows ........... [RUN]
+[0m20:13:56.026989 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.fact_cashflow_summary, now model.bain_capital_portfolio_analytics.report_monthly_cashflows)
+[0m20:13:56.027275 [debug] [Thread-7 (]: Began compiling node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:13:56.030293 [debug] [Thread-7 (]: Writing injected SQL for node "model.bain_capital_portfolio_analytics.report_monthly_cashflows"
+[0m20:13:56.031010 [debug] [Thread-7 (]: Began executing node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:13:56.033429 [debug] [Thread-7 (]: Writing runtime sql for node "model.bain_capital_portfolio_analytics.report_monthly_cashflows"
+[0m20:13:56.035980 [debug] [Thread-7 (]: Using snowflake connection "model.bain_capital_portfolio_analytics.report_monthly_cashflows"
+[0m20:13:56.036392 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.report_monthly_cashflows: create or replace transient table BAIN_ANALYTICS.DEV_pipeline_a.report_monthly_cashflows
+    
+    
+    
+    as (-- Pipeline A: Simple Cashflow Pipeline
+-- Model: report_monthly_cashflows
+-- Description: LP reporting view for monthly cashflow analysis
+--
+
+with fact_data as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.fact_cashflow_summary
+),
+
+monthly_totals as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        cashflow_month,
+        year_num,
+        month_num,
+        sum(case when cashflow_type = 'CONTRIBUTION' then total_amount else 0 end) as contributions,
+        sum(case when cashflow_type = 'DISTRIBUTION' then total_amount else 0 end) as distributions,
+        sum(case when cashflow_type = 'DIVIDEND' then total_amount else 0 end) as dividends,
+        sum(case when cashflow_type = 'FEE' then total_amount else 0 end) as fees,
+        sum(total_amount) as total_cashflow,
+        sum(transaction_count) as total_transactions
+    from fact_data
+    group by 1,2,3,4,5,6,7
+),
+
+with_running_totals as (
+    select
+        *,
+        -- Running totals (repeated pattern)
+        sum(contributions) over (
+            partition by portfolio_id
+            order by cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_contributions,
+        sum(distributions) over (
+            partition by portfolio_id
+            order by cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_distributions,
+        sum(total_cashflow) over (
+            partition by portfolio_id
+            order by cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_net_cashflow,
+        -- Prior period comparisons (another repeated pattern)
+        lag(contributions, 1) over (partition by portfolio_id order by cashflow_month) as prior_month_contributions,
+        lag(distributions, 1) over (partition by portfolio_id order by cashflow_month) as prior_month_distributions,
+        lag(total_cashflow, 1) over (partition by portfolio_id order by cashflow_month) as prior_month_total,
+        -- YoY comparison
+        lag(contributions, 12) over (partition by portfolio_id order by cashflow_month) as prior_year_contributions,
+        lag(distributions, 12) over (partition by portfolio_id order by cashflow_month) as prior_year_distributions
+    from monthly_totals
+),
+
+final as (
+    select
+        *,
+        contributions - coalesce(prior_month_contributions, 0) as mom_contribution_change,
+        distributions - coalesce(prior_month_distributions, 0) as mom_distribution_change,
+        case
+            when prior_year_contributions > 0
+            then (contributions - prior_year_contributions) / prior_year_contributions * 100
+            else null
+        end as yoy_contribution_pct_change,
+        contributions - distributions as net_inflow
+    from with_running_totals
+)
+
+select * from final
+order by portfolio_id, cashflow_month
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.report_monthly_cashflows"} */;
+[0m20:13:56.036767 [debug] [Thread-7 (]: Opening a new connection, currently in state closed
+[0m20:13:59.056707 [debug] [Thread-7 (]: SQL status: SUCCESS 329 in 3.020 seconds
+[0m20:13:59.060854 [debug] [Thread-7 (]: On model.bain_capital_portfolio_analytics.report_monthly_cashflows: Close
+[0m20:13:59.878470 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd55050>]}
+[0m20:13:59.879889 [info ] [Thread-7 (]: 4 of 4 OK created sql table model DEV_pipeline_a.report_monthly_cashflows ...... [[32mSUCCESS 329[0m in 3.85s]
+[0m20:13:59.880521 [debug] [Thread-7 (]: Finished running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m20:13:59.882194 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:13:59.882551 [debug] [MainThread]: Connection 'model.bain_capital_portfolio_analytics.report_monthly_cashflows' was properly closed.
+[0m20:13:59.882968 [info ] [MainThread]: 
+[0m20:13:59.883266 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 29.27 seconds (29.27s).
+[0m20:13:59.884222 [debug] [MainThread]: Command end result
+[0m20:13:59.933292 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m20:13:59.935244 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m20:13:59.939625 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/run_results.json
+[0m20:13:59.939867 [info ] [MainThread]: 
+[0m20:13:59.940133 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:13:59.940336 [info ] [MainThread]: 
+[0m20:13:59.940562 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m20:13:59.940986 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:13:59.943796 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 30.629465, "process_in_blocks": "0", "process_kernel_time": 0.432372, "process_mem_max_rss": "176947200", "process_out_blocks": "0", "process_user_time": 2.925293}
+[0m20:13:59.944150 [debug] [MainThread]: Command `dbt run` succeeded at 20:13:59.944089 after 30.63 seconds
+[0m20:13:59.944456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f97250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051125d0>]}
+[0m20:13:59.944753 [debug] [MainThread]: Flushing usage events
+[0m20:14:01.373666 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -11,12 +11,10 @@ with source as (
         fund_id,
         inception_date,
         status,
-        currency,
-        created_at,
-        updated_at,
+        aum_usd,
         row_number() over (
             partition by portfolio_id
-            order by updated_at desc
+            order by portfolio_id desc
         ) as rn
     from {{ source('raw', 'portfolios') }}
 ),
@@ -29,9 +27,7 @@ deduplicated as (
         fund_id,
         inception_date,
         status,
-        currency,
-        created_at,
-        updated_at
+        aum_usd
     from source
     where rn = 1
 ),

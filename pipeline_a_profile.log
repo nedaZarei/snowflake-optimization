@@ -1,0 +1,553 @@
+[0m16:43:29  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092ebbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934ced0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936d890>]}
+[0m16:43:29  Running with dbt=1.11.5
+[0m16:43:29  running dbt with arguments {'printer_width': '80', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/nedazarei/Documents/turintech/snowflake-optimized', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'version_check': 'True', 'log_format': 'default', 'static_parser': 'True', 'use_colors': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'target_path': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_path': '/Users/nedazarei/Documents/turintech/snowflake-optimized/logs', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'write_json': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --select models/pipeline_a --full-refresh --log-level debug', 'debug': 'False'}
+[0m16:43:29  Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:43:29  Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:43:29  Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:43:29  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a42b8d0>]}
+[0m16:43:29  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084b9450>]}
+[0m16:43:29  Registered adapter: snowflake=1.11.2
+[0m16:43:29  checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m16:43:30  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:43:30  Partial parsing: updated file: bain_capital_portfolio_analytics://models/pipeline_a/staging/stg_cashflows.sql
+[0m16:43:30  [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_cashflows' in
+package 'bain_capital_portfolio_analytics' (models/pipeline_a/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m16:43:30  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b740bd0>]}
+[0m16:43:30  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4db7d0>]}
+[0m16:43:30  Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m16:43:30  Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m16:43:30  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6e4590>]}
+[0m16:43:30  Found 32 models, 90 data tests, 5 seeds, 12 sources, 662 macros
+[0m16:43:30  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a47e4d0>]}
+[0m16:43:30  
+[0m16:43:30  Concurrency: 1 threads (target='dev')
+[0m16:43:30  
+[0m16:43:30  Acquiring new snowflake connection 'master'
+[0m16:43:30  Acquiring new snowflake connection 'list_BAIN_ANALYTICS'
+[0m16:43:30  Using snowflake connection "list_BAIN_ANALYTICS"
+[0m16:43:30  On list_BAIN_ANALYTICS: show terse schemas in database BAIN_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS"} */
+[0m16:43:30  Opening a new connection, currently in state init
+[0m16:43:33  SQL status: SUCCESS 12 in 2.801 seconds
+[0m16:43:33  On list_BAIN_ANALYTICS: Close
+[0m16:43:34  Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS, now list_BAIN_ANALYTICS_DEV_pipeline_a)
+[0m16:43:34  Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_a"
+[0m16:43:34  On list_BAIN_ANALYTICS_DEV_pipeline_a: show objects in BAIN_ANALYTICS.DEV_pipeline_a
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_a"} */;
+[0m16:43:34  Opening a new connection, currently in state closed
+[0m16:43:35  SQL status: SUCCESS 2 in 1.732 seconds
+[0m16:43:35  On list_BAIN_ANALYTICS_DEV_pipeline_a: Close
+[0m16:43:36  Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_a, now list_BAIN_ANALYTICS_DEV_pipeline_c)
+[0m16:43:36  Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_c"
+[0m16:43:36  On list_BAIN_ANALYTICS_DEV_pipeline_c: show objects in BAIN_ANALYTICS.DEV_pipeline_c
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_c"} */;
+[0m16:43:36  Opening a new connection, currently in state closed
+[0m16:43:38  SQL status: SUCCESS 0 in 1.854 seconds
+[0m16:43:38  On list_BAIN_ANALYTICS_DEV_pipeline_c: Close
+[0m16:43:39  Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_c, now list_BAIN_ANALYTICS_DEV)
+[0m16:43:39  Using snowflake connection "list_BAIN_ANALYTICS_DEV"
+[0m16:43:39  On list_BAIN_ANALYTICS_DEV: show objects in BAIN_ANALYTICS.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV"} */;
+[0m16:43:39  Opening a new connection, currently in state closed
+[0m16:43:41  SQL status: SUCCESS 88 in 2.094 seconds
+[0m16:43:41  On list_BAIN_ANALYTICS_DEV: Close
+[0m16:43:42  Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV, now list_BAIN_ANALYTICS_DEV_pipeline_b)
+[0m16:43:42  Using snowflake connection "list_BAIN_ANALYTICS_DEV_pipeline_b"
+[0m16:43:42  On list_BAIN_ANALYTICS_DEV_pipeline_b: show objects in BAIN_ANALYTICS.DEV_pipeline_b
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV_pipeline_b"} */;
+[0m16:43:42  Opening a new connection, currently in state closed
+[0m16:43:44  SQL status: SUCCESS 0 in 2.172 seconds
+[0m16:43:44  On list_BAIN_ANALYTICS_DEV_pipeline_b: Close
+[0m16:43:45  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba43410>]}
+[0m16:43:45  Began running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m16:43:45  1 of 4 START sql view model DEV_pipeline_a.stg_cashflows ....................... [RUN]
+[0m16:43:45  Re-using an available connection from the pool (formerly list_BAIN_ANALYTICS_DEV_pipeline_b, now model.bain_capital_portfolio_analytics.stg_cashflows)
+[0m16:43:45  Began compiling node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m16:43:45  Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m16:43:45  Began executing node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m16:43:45  Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m16:43:45  Using snowflake connection "model.bain_capital_portfolio_analytics.stg_cashflows"
+[0m16:43:45  On model.bain_capital_portfolio_analytics.stg_cashflows: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_cashflows
+-- Description: Staging model for raw cashflow data
+--
+
+with source as (
+    select distinct
+        cashflow_id,
+        portfolio_id,
+        cashflow_type,
+        cashflow_date,
+        amount,
+        currency,
+        created_at,
+        updated_at
+    from BAIN_ANALYTICS.DEV.SAMPLE_CASHFLOWS
+),
+
+converted as (
+    select
+        cashflow_id,
+        'PF' || lpad(cast(portfolio_id as varchar), 3, '0') as portfolio_id,
+        upper(cashflow_type) as cashflow_type,
+        cast(cashflow_date as date) as cashflow_date,
+        cast(amount as decimal(18,2)) as amount,
+        upper(currency) as currency,
+        cast(created_at as timestamp) as created_at,
+        cast(updated_at as timestamp) as updated_at
+    from source
+),
+
+filtered as (
+    select *
+    from converted
+    where cashflow_date >= '2020-01-01'
+      and cashflow_date <= '2024-12-31'
+)
+
+select * from filtered
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_cashflows"} */;
+[0m16:43:45  Opening a new connection, currently in state closed
+[0m16:43:48  SQL status: SUCCESS 1 in 2.899 seconds
+[0m16:43:48  On model.bain_capital_portfolio_analytics.stg_cashflows: Close
+[0m16:43:48  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc8e310>]}
+[0m16:43:48  1 of 4 OK created sql view model DEV_pipeline_a.stg_cashflows .................. [[32mSUCCESS 1[0m in 3.59s]
+[0m16:43:48  Finished running node model.bain_capital_portfolio_analytics.stg_cashflows
+[0m16:43:48  Began running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m16:43:48  2 of 4 START sql view model DEV_pipeline_a.stg_portfolios ...................... [RUN]
+[0m16:43:48  Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_cashflows, now model.bain_capital_portfolio_analytics.stg_portfolios)
+[0m16:43:48  Began compiling node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m16:43:48  Writing injected SQL for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m16:43:48  Began executing node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m16:43:48  Writing runtime sql for node "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m16:43:48  Using snowflake connection "model.bain_capital_portfolio_analytics.stg_portfolios"
+[0m16:43:48  On model.bain_capital_portfolio_analytics.stg_portfolios: create or replace   view BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+  
+  
+  
+  
+  as (
+    -- Pipeline A: Simple Cashflow Pipeline
+-- Model: stg_portfolios
+-- Description: Staging model for portfolio master data
+--
+
+with source as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        aum_usd,
+        row_number() over (
+            partition by portfolio_id
+            order by portfolio_id desc
+        ) as rn
+    from BAIN_ANALYTICS.DEV.SAMPLE_PORTFOLIOS
+),
+
+deduplicated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        inception_date,
+        status,
+        aum_usd
+    from source
+    where rn = 1
+),
+
+active_only as (
+    select *
+    from deduplicated
+    where status = 'ACTIVE'
+)
+
+select * from active_only
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.stg_portfolios"} */;
+[0m16:43:48  Opening a new connection, currently in state closed
+[0m16:43:50  SQL status: SUCCESS 1 in 2.019 seconds
+[0m16:43:50  On model.bain_capital_portfolio_analytics.stg_portfolios: Close
+[0m16:43:51  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdc2250>]}
+[0m16:43:51  2 of 4 OK created sql view model DEV_pipeline_a.stg_portfolios ................. [[32mSUCCESS 1[0m in 2.67s]
+[0m16:43:51  Finished running node model.bain_capital_portfolio_analytics.stg_portfolios
+[0m16:43:51  Began running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m16:43:51  3 of 4 START sql table model DEV_pipeline_a.fact_cashflow_summary .............. [RUN]
+[0m16:43:51  Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.stg_portfolios, now model.bain_capital_portfolio_analytics.fact_cashflow_summary)
+[0m16:43:51  Began compiling node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m16:43:51  Writing injected SQL for node "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m16:43:51  Began executing node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m16:43:51  Writing runtime sql for node "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m16:43:51  Using snowflake connection "model.bain_capital_portfolio_analytics.fact_cashflow_summary"
+[0m16:43:51  On model.bain_capital_portfolio_analytics.fact_cashflow_summary: create or replace transient table BAIN_ANALYTICS.DEV_pipeline_a.fact_cashflow_summary
+    
+    
+    
+    as (-- Pipeline A: Simple Cashflow Pipeline
+-- Model: fact_cashflow_summary
+-- Description: Fact table summarizing cashflows by portfolio and month
+--
+
+with cashflows as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_cashflows
+),
+
+portfolios as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.stg_portfolios
+),
+
+joined as (
+    select
+        c.cashflow_id,
+        c.portfolio_id,
+        p.portfolio_name,
+        p.portfolio_type,
+        p.fund_id,
+        c.cashflow_type,
+        c.cashflow_date,
+        c.amount,
+        c.currency,
+        date_trunc('month', c.cashflow_date) as cashflow_month,
+        date_trunc('quarter', c.cashflow_date) as cashflow_quarter,
+        date_trunc('year', c.cashflow_date) as cashflow_year,
+        extract(year from c.cashflow_date) as year_num,
+        extract(month from c.cashflow_date) as month_num,
+        extract(quarter from c.cashflow_date) as quarter_num,
+        extract(dayofmonth from c.cashflow_date) as day_num
+    from cashflows c
+    inner join portfolios p
+        on c.portfolio_id = p.portfolio_id
+),
+
+aggregated as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        cashflow_month,
+        cashflow_quarter,
+        cashflow_year,
+        year_num,
+        month_num,
+        quarter_num,
+        cashflow_type,
+        currency,
+        count(*) as transaction_count,
+        count(distinct cashflow_id) as unique_transactions,
+        sum(amount) as total_amount,
+        avg(amount) as avg_amount,
+        min(amount) as min_amount,
+        max(amount) as max_amount,
+        stddev(amount) as stddev_amount,
+        percentile_cont(0.25) within group (order by amount) as p25_amount,
+        percentile_cont(0.50) within group (order by amount) as median_amount,
+        percentile_cont(0.75) within group (order by amount) as p75_amount
+    from joined
+    group by 1,2,3,4,5,6,7,8,9,10,11,12
+),
+
+with_prior_months as (
+    select
+        agg.*,
+        agg_m1.total_amount as prior_1m_total,
+        agg_m1.transaction_count as prior_1m_count,
+        agg_m3.total_amount as prior_3m_total,
+        agg_m6.total_amount as prior_6m_total,
+        agg_m12.total_amount as prior_12m_total
+    from aggregated agg
+    left join aggregated agg_m1
+        on agg.portfolio_id = agg_m1.portfolio_id
+        and agg.cashflow_type = agg_m1.cashflow_type
+        and agg.currency = agg_m1.currency
+        and agg_m1.cashflow_month = dateadd(month, -1, agg.cashflow_month)
+    left join aggregated agg_m3
+        on agg.portfolio_id = agg_m3.portfolio_id
+        and agg.cashflow_type = agg_m3.cashflow_type
+        and agg.currency = agg_m3.currency
+        and agg_m3.cashflow_month = dateadd(month, -3, agg.cashflow_month)
+    left join aggregated agg_m6
+        on agg.portfolio_id = agg_m6.portfolio_id
+        and agg.cashflow_type = agg_m6.cashflow_type
+        and agg.currency = agg_m6.currency
+        and agg_m6.cashflow_month = dateadd(month, -6, agg.cashflow_month)
+    left join aggregated agg_m12
+        on agg.portfolio_id = agg_m12.portfolio_id
+        and agg.cashflow_type = agg_m12.cashflow_type
+        and agg.currency = agg_m12.currency
+        and agg_m12.cashflow_month = dateadd(month, -12, agg.cashflow_month)
+),
+
+with_window_calcs as (
+    select
+        wpm.*,
+        sum(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_total,
+        sum(transaction_count) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_count,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 2 preceding and current row
+        ) as rolling_3m_avg,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 5 preceding and current row
+        ) as rolling_6m_avg,
+        avg(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_avg,
+        stddev(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_stddev,
+        min(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_min,
+        max(total_amount) over (
+            partition by wpm.portfolio_id, wpm.cashflow_type, wpm.currency
+            order by wpm.cashflow_month
+            rows between 11 preceding and current row
+        ) as rolling_12m_max
+    from with_prior_months wpm
+),
+
+with_fund_context as (
+    select
+        wwc.*,
+        (
+            select sum(total_amount)
+            from aggregated agg2
+            inner join portfolios p2
+                on agg2.portfolio_id = p2.portfolio_id
+            where p2.fund_id = wwc.fund_id
+            and agg2.cashflow_month = wwc.cashflow_month
+            and agg2.cashflow_type = wwc.cashflow_type
+        ) as fund_total_amount,
+        (
+            select count(distinct agg2.portfolio_id)
+            from aggregated agg2
+            inner join portfolios p2
+                on agg2.portfolio_id = p2.portfolio_id
+            where p2.fund_id = wwc.fund_id
+            and agg2.cashflow_month = wwc.cashflow_month
+            and agg2.cashflow_type = wwc.cashflow_type
+        ) as fund_portfolio_count
+    from with_window_calcs wwc
+),
+
+final as (
+    select
+        md5(cast(coalesce(cast(wfc.portfolio_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.cashflow_month as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.cashflow_type as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(wfc.currency as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as cashflow_summary_key,
+        wfc.*,
+        case
+            when wfc.fund_total_amount > 0
+            then (wfc.total_amount / wfc.fund_total_amount) * 100
+            else null
+        end as portfolio_share_of_fund_pct,
+        case
+            when wfc.prior_1m_total is not null and wfc.prior_1m_total != 0
+            then ((wfc.total_amount - wfc.prior_1m_total) / abs(wfc.prior_1m_total)) * 100
+            else null
+        end as mom_growth_pct,
+        case
+            when wfc.prior_3m_total is not null and wfc.prior_3m_total != 0
+            then ((wfc.total_amount - wfc.prior_3m_total) / abs(wfc.prior_3m_total)) * 100
+            else null
+        end as growth_3m_pct,
+        case
+            when wfc.prior_12m_total is not null and wfc.prior_12m_total != 0
+            then ((wfc.total_amount - wfc.prior_12m_total) / abs(wfc.prior_12m_total)) * 100
+            else null
+        end as yoy_growth_pct,
+        case
+            when wfc.rolling_3m_avg > wfc.rolling_12m_avg * 1.3 then 'ACCELERATING'
+            when wfc.rolling_3m_avg > wfc.rolling_12m_avg * 1.1 then 'GROWING'
+            when wfc.rolling_3m_avg < wfc.rolling_12m_avg * 0.7 then 'DECLINING_FAST'
+            when wfc.rolling_3m_avg < wfc.rolling_12m_avg * 0.9 then 'DECLINING'
+            else 'STABLE'
+        end as trend_classification,
+        case
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.1 then 'LOW_VOLATILITY'
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.3 then 'MODERATE_VOLATILITY'
+            when wfc.rolling_12m_stddev < wfc.rolling_12m_avg * 0.5 then 'HIGH_VOLATILITY'
+            else 'VERY_HIGH_VOLATILITY'
+        end as volatility_classification,
+        case
+            when abs(wfc.total_amount) >= 10000000 then 'MEGA'
+            when abs(wfc.total_amount) >= 5000000 then 'LARGE'
+            when abs(wfc.total_amount) >= 1000000 then 'MEDIUM'
+            when abs(wfc.total_amount) >= 100000 then 'SMALL'
+            else 'MICRO'
+        end as transaction_size_category
+    from with_fund_context wfc
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.fact_cashflow_summary"} */;
+[0m16:43:51  Opening a new connection, currently in state closed
+[0m16:43:55  SQL status: SUCCESS 426 in 3.857 seconds
+[0m16:43:55  On model.bain_capital_portfolio_analytics.fact_cashflow_summary: Close
+[0m16:43:56  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc20310>]}
+[0m16:43:56  3 of 4 OK created sql table model DEV_pipeline_a.fact_cashflow_summary ......... [[32mSUCCESS 426[0m in 4.52s]
+[0m16:43:56  Finished running node model.bain_capital_portfolio_analytics.fact_cashflow_summary
+[0m16:43:56  Began running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m16:43:56  4 of 4 START sql table model DEV_pipeline_a.report_monthly_cashflows ........... [RUN]
+[0m16:43:56  Re-using an available connection from the pool (formerly model.bain_capital_portfolio_analytics.fact_cashflow_summary, now model.bain_capital_portfolio_analytics.report_monthly_cashflows)
+[0m16:43:56  Began compiling node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m16:43:56  Writing injected SQL for node "model.bain_capital_portfolio_analytics.report_monthly_cashflows"
+[0m16:43:56  Began executing node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m16:43:56  Writing runtime sql for node "model.bain_capital_portfolio_analytics.report_monthly_cashflows"
+[0m16:43:56  Using snowflake connection "model.bain_capital_portfolio_analytics.report_monthly_cashflows"
+[0m16:43:56  On model.bain_capital_portfolio_analytics.report_monthly_cashflows: create or replace transient table BAIN_ANALYTICS.DEV_pipeline_a.report_monthly_cashflows
+    
+    
+    
+    as (-- Pipeline A: Simple Cashflow Pipeline
+-- Model: report_monthly_cashflows
+-- Description: LP reporting view for monthly cashflow analysis
+--
+
+with fact_data as (
+    select * from BAIN_ANALYTICS.DEV_pipeline_a.fact_cashflow_summary
+),
+
+monthly_totals as (
+    select
+        portfolio_id,
+        portfolio_name,
+        portfolio_type,
+        fund_id,
+        cashflow_month,
+        year_num,
+        month_num,
+        sum(case when cashflow_type = 'CONTRIBUTION' then total_amount else 0 end) as contributions,
+        sum(case when cashflow_type = 'DISTRIBUTION' then total_amount else 0 end) as distributions,
+        sum(case when cashflow_type = 'DIVIDEND' then total_amount else 0 end) as dividends,
+        sum(case when cashflow_type = 'FEE' then total_amount else 0 end) as fees,
+        sum(total_amount) as total_cashflow,
+        sum(transaction_count) as total_transactions
+    from fact_data
+    group by 1,2,3,4,5,6,7
+),
+
+with_running_totals as (
+    select
+        *,
+        -- Running totals (repeated pattern)
+        sum(contributions) over (
+            partition by portfolio_id
+            order by cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_contributions,
+        sum(distributions) over (
+            partition by portfolio_id
+            order by cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_distributions,
+        sum(total_cashflow) over (
+            partition by portfolio_id
+            order by cashflow_month
+            rows between unbounded preceding and current row
+        ) as cumulative_net_cashflow,
+        -- Prior period comparisons (another repeated pattern)
+        lag(contributions, 1) over (partition by portfolio_id order by cashflow_month) as prior_month_contributions,
+        lag(distributions, 1) over (partition by portfolio_id order by cashflow_month) as prior_month_distributions,
+        lag(total_cashflow, 1) over (partition by portfolio_id order by cashflow_month) as prior_month_total,
+        -- YoY comparison
+        lag(contributions, 12) over (partition by portfolio_id order by cashflow_month) as prior_year_contributions,
+        lag(distributions, 12) over (partition by portfolio_id order by cashflow_month) as prior_year_distributions
+    from monthly_totals
+),
+
+final as (
+    select
+        *,
+        contributions - coalesce(prior_month_contributions, 0) as mom_contribution_change,
+        distributions - coalesce(prior_month_distributions, 0) as mom_distribution_change,
+        case
+            when prior_year_contributions > 0
+            then (contributions - prior_year_contributions) / prior_year_contributions * 100
+            else null
+        end as yoy_contribution_pct_change,
+        contributions - distributions as net_inflow
+    from with_running_totals
+)
+
+select * from final
+order by portfolio_id, cashflow_month
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "bain_capital", "target_name": "dev", "node_id": "model.bain_capital_portfolio_analytics.report_monthly_cashflows"} */;
+[0m16:43:56  Opening a new connection, currently in state closed
+[0m16:43:59  SQL status: SUCCESS 329 in 3.020 seconds
+[0m16:43:59  On model.bain_capital_portfolio_analytics.report_monthly_cashflows: Close
+[0m16:43:59  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5de5792b-4a09-4614-8b04-25a27651a2ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd55050>]}
+[0m16:43:59  4 of 4 OK created sql table model DEV_pipeline_a.report_monthly_cashflows ...... [[32mSUCCESS 329[0m in 3.85s]
+[0m16:43:59  Finished running node model.bain_capital_portfolio_analytics.report_monthly_cashflows
+[0m16:43:59  Connection 'master' was properly closed.
+[0m16:43:59  Connection 'model.bain_capital_portfolio_analytics.report_monthly_cashflows' was properly closed.
+[0m16:43:59  
+[0m16:43:59  Finished running 2 table models, 2 view models in 0 hours 0 minutes and 29.27 seconds (29.27s).
+[0m16:43:59  Command end result
+[0m16:43:59  Wrote artifact WritableManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/manifest.json
+[0m16:43:59  Wrote artifact SemanticManifest to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/semantic_manifest.json
+[0m16:43:59  Wrote artifact RunExecutionResult to /Users/nedazarei/Documents/turintech/snowflake-optimized/target/run_results.json
+[0m16:43:59  
+[0m16:43:59  [32mCompleted successfully[0m
+[0m16:43:59  
+[0m16:43:59  Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m16:43:59  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:43:59  Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 30.629465, "process_in_blocks": "0", "process_kernel_time": 0.432372, "process_mem_max_rss": "176947200", "process_out_blocks": "0", "process_user_time": 2.925293}
+[0m16:43:59  Command `dbt run` succeeded at 20:13:59.944089 after 30.63 seconds
+[0m16:43:59  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f97250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051125d0>]}
+[0m16:43:59  Flushing usage events
+[0m16:44:01  An error was encountered while trying to flush usage events
