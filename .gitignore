@@ -1,0 +1,14 @@
+# Python virtual environment
+.venv/
+
+# dbt artifacts
+target/
+logs/
+dbt_packages/
+
+# Profiling logs
+*.log
+profiling_results.md
+
+# OS files
+.DS_Store
